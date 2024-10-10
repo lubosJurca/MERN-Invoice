@@ -9,10 +9,10 @@
     }
   ],
   "compilerOptions": {
-    "noEmit": true,
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
     }
-  }
+  },
+  "include": ["/client/src"]
 }

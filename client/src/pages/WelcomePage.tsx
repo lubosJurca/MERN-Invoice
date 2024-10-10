@@ -5,7 +5,7 @@ import {
   animate,
 } from 'framer-motion';
 import { useEffect } from 'react';
-import heroSvg from '../assets/heroImage.svg';
+import HeroPageSVG from '../components/HeroPageSVG';
 import { Button } from '../components/ui/button';
 import { Link } from 'react-router-dom';
 import TestUserBtn from '../components/TestUserBtn';
@@ -121,11 +121,7 @@ const WelcomePage = () => {
           transition={{ duration: 0.5, delay: 0.5 }}
           className='w-full md:w-1/2 flex justify-center md:justify-end'
         >
-          <img
-            src={heroSvg}
-            alt='Invoice management'
-            className='w-full h-auto transform hover:scale-105 transition duration-500'
-          />
+          <HeroPageSVG />
         </motion.div>
       </div>
     </motion.section>
