@@ -136,7 +136,6 @@ export const loginUser = async (formData: LoginUserTypes) => {
 
 // ----------GET CURRENT USER -----------------
 export const getUser = async () => {
-  // http://localhost:5100/api/users/me
   const response = await fetch(`${API_BASE_URL}/users/me`, {
     credentials: 'include',
   });
