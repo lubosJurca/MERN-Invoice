@@ -82,7 +82,7 @@ const WelcomePage = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 1, staggerChildren: 0.5 }}
-            className='flex justify-center flex-col sm:flex-row   sm:justify-start gap-4'
+            className='flex flex-col sm:flex-row   sm:justify-start gap-4 p-4'
           >
             <motion.li
               initial={{ opacity: 0, x: -20 }}
@@ -98,7 +98,7 @@ const WelcomePage = () => {
               transition={{ duration: 0.3, delay: 1 }}
               key={generateRandomKey()}
             >
-              <Button className=' z-10'>
+              <Button className=' z-10 min-w-60 sm:min-w-fit'>
                 <Link to='/register'>{t('buttons.register')}</Link>
               </Button>
             </motion.li>
@@ -109,7 +109,7 @@ const WelcomePage = () => {
               transition={{ duration: 0.3, delay: 1.5 }}
               key={generateRandomKey()}
             >
-              <Button className='   z-10'>
+              <Button className='min-w-60 sm:min-w-fit   z-10'>
                 <Link to='/login'>{t('buttons.login')}</Link>
               </Button>
             </motion.li>

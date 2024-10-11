@@ -46,6 +46,7 @@ const enTranslation = {
       pending: 'Pending',
       paid: 'Paid',
       draft: 'Draft',
+      text: 'Filter By',
     },
     footer: {
       p: 'Copyright © 2024 Lubos Jurca. All rights reserved.',

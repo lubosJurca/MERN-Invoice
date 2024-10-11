@@ -60,6 +60,7 @@ const csTranslation = {
       pending: 'Nezaplaceno',
       paid: 'Zaplaceno',
       draft: 'Návrh',
+      text: 'Filtrovat Dle',
     },
 
     footer: {
@@ -107,7 +108,7 @@ const csTranslation = {
 
     noInvoiceComponent: {
       h2: 'Žádná faktura nenalezena',
-      pFirst: 'Vytvořte novou fakturu kliknutím na tlacítko',
+      pFirst: 'Vytvořte novou fakturu kliknutím na tlačítko',
       pLast: 'a můžete začít.',
     },
 

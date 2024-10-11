@@ -29,7 +29,7 @@ const PhoneInvoiceCard = ({ data }: PhoneInvoiceCardProps) => {
 
   return (
     <Link to={`/invoices/${_id}`}>
-      <Card className='sm:hidden   py-4  border-none hover:bg-slate-50 cursor-pointer transition active:scale-95'>
+      <Card className='sm:hidden   py-4  border-none hover:scale-105  cursor-pointer transition active:scale-95'>
         <CardContent className='flex flex-col gap-6 h-full justify-between  pb-0'>
           <div className='flex justify-between text-[#858BB2] text-[13px]  font-medium'>
             <h4 className='text-formLabel  font-bold text-sm'>{description}</h4>

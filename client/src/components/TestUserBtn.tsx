@@ -5,6 +5,8 @@ import { useNavigate } from 'react-router-dom';
 import { Button } from './ui/button';
 import { useTranslation } from 'react-i18next';
 
+import SyncLoader from 'react-spinners/SyncLoader';
+
 const TestUserBtn = () => {
   const { t } = useTranslation();
   const queryClient = useQueryClient();
@@ -28,8 +30,17 @@ const TestUserBtn = () => {
   };
 
   return (
-    <Button className='dark:hover:text-black' onClick={handleClick}>
-      {t('buttons.testUser')}
+    <Button
+      className='dark:hover:text-black disabled:bg-purpleBtnBG disabled:text-white  min-w-60 sm:min-w-40'
+      onClick={handleClick}
+      disabled={mutation.isPending}
+    >
+      {mutation.isPending ? (
+        <SyncLoader size={3} color='#ffffff' />
+      ) : (
+        t('buttons.testUser')
+      )}
+      {/* {t('buttons.testUser')} */}
     </Button>
   );
 };

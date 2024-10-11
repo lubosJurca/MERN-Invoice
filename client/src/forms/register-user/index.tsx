@@ -17,6 +17,7 @@ import { toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
 import { registerUserFormSchema } from '../../utils/schemas';
 import { useTranslation } from 'react-i18next';
+import SyncLoader from 'react-spinners/SyncLoader';
 
 const RegisterUserForm = () => {
   const { t } = useTranslation();
@@ -127,7 +128,11 @@ const RegisterUserForm = () => {
           className='bg-01 hover:bg-02 text-white flex w-full'
           type='submit'
         >
-          {t('registerUserForm.registerBtn')}
+          {mutation.isPending ? (
+            <SyncLoader size={3} color='#ffffff' />
+          ) : (
+            t('registerUserForm.registerBtn')
+          )}
         </Button>
       </form>
     </Form>

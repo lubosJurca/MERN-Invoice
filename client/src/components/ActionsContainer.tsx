@@ -9,7 +9,7 @@ const ActionsContainer = () => {
         <h1 className='text-h1Text font-bold text-2xl'>Invoices</h1>
         <InvoiceDisplay />
       </div>
-      <div className='flex'>
+      <div className='flex space-x-2'>
         <FilterComponent />
         <CreateInvoicComponent />
       </div>

@@ -22,12 +22,11 @@ const LanguageDropdown = () => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button className='bg-transparent  m-2 focus:outline-none'>
-          {/* {language === 'en' ? 'EN' : 'CZ'} */}
-          <Globe className='text-[#494E6E]' />
+        <Button className='bg-transparent sm:m-2  focus:outline-none'>
+          <Globe className='text-[#858BB2]' />
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className='w-12 bg-purpleBtnBG  border-none '>
+      <DropdownMenuContent className='w-12 border-none '>
         <DropdownMenuRadioGroup
           value={language}
           onValueChange={handleChangeLanguage}
