@@ -49,20 +49,19 @@ const DeleteBtn = () => {
       </AlertDialogTrigger>
       <AlertDialogContent>
         <AlertDialogHeader>
-          <AlertDialogTitle>Confirm Deletion</AlertDialogTitle>
+          <AlertDialogTitle>{t('deleteModal.title')}</AlertDialogTitle>
           <AlertDialogDescription>
-            Are you sure you want to delete this invoice? This action cannot be
-            undone
+            {t('deleteModal.description')}
           </AlertDialogDescription>
         </AlertDialogHeader>
         <AlertDialogFooter>
-          <AlertDialogCancel>Cancel</AlertDialogCancel>
+          <AlertDialogCancel>{t('deleteModal.cancel')}</AlertDialogCancel>
           <AlertDialogAction asChild>
             <Button
               className='rounded-full dark:text-white bg-deleteBtnBG '
               onClick={() => mutation.mutate(id as string)}
             >
-              Delete
+              {t('deleteModal.delete')}
             </Button>
           </AlertDialogAction>
         </AlertDialogFooter>

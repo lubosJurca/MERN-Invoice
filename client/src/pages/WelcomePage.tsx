@@ -98,7 +98,7 @@ const WelcomePage = () => {
               transition={{ duration: 0.3, delay: 1 }}
               key={generateRandomKey()}
             >
-              <Button className=' z-10 min-w-60 sm:min-w-fit'>
+              <Button className=' z-10 min-w-60 dark:hover:text-black sm:min-w-fit'>
                 <Link to='/register'>{t('buttons.register')}</Link>
               </Button>
             </motion.li>
@@ -109,7 +109,7 @@ const WelcomePage = () => {
               transition={{ duration: 0.3, delay: 1.5 }}
               key={generateRandomKey()}
             >
-              <Button className='min-w-60 sm:min-w-fit   z-10'>
+              <Button className='min-w-60 sm:min-w-fit dark:hover:text-black  z-10'>
                 <Link to='/login'>{t('buttons.login')}</Link>
               </Button>
             </motion.li>

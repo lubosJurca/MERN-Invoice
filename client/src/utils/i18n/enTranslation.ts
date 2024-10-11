@@ -59,6 +59,14 @@ const enTranslation = {
       draft: 'Draft',
     },
 
+    deleteModal: {
+      title: 'Confirm Deletion',
+      description:
+        ' Are you sure you want to delete this invoice? This action cannot be undone?',
+      cancel: 'Cancel',
+      delete: 'Delete',
+    },
+
     detailPage: {
       buttons: {
         edit: 'Edit',

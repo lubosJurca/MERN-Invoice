@@ -106,6 +106,13 @@ const csTranslation = {
       },
     },
 
+    deleteModal: {
+      title: 'Potvrdit smazání',
+      description: 'Opravdu chcete smazat tuto fakturu? Tato akce je nevratná.',
+      cancel: 'Zrušit',
+      delete: 'Smazat',
+    },
+
     noInvoiceComponent: {
       h2: 'Žádná faktura nenalezena',
       pFirst: 'Vytvořte novou fakturu kliknutím na tlačítko',
